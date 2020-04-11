@@ -4,7 +4,7 @@ from frames import games
 from frames import info
 from frames import events
 
-plays = games.query((games['type']=='play')&(games['event']!='NP'))
+#plays = games.query((games['type']=='play')&(games['event']!='NP'))
 
 
 
