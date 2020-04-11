@@ -14,7 +14,7 @@ pa = pa.groupby(['year', 'game_id', 'team']).size().reset_index(name='PA')
 
 events = events.set_index(['year', 'game_id', 'team', 'event_type'])
 
-evvents = events.unstack().fillna(0).reset_index()
+events = events.unstack().fillna(0).reset_index()
 
 #events.columns = events.columns.droplevel()
 
